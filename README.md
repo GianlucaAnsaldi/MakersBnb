@@ -53,3 +53,13 @@ Any signed-up user can request to hire any space for one night, and this should 
   As a user
   So that I can select the appropriate guest for my space
   I would like to review a booking request
+
+
+Table: spaces
+|------|--------|---------------|-----------|
+|  id  |  name  |  description  |   price   |
+|------|--------|---------------|-----------|
+|  1   |  Loft  | "a nice loft" |     90    |
+|------|--------|---------------|-----------|
+
+
