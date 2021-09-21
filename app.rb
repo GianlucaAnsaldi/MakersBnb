@@ -8,7 +8,7 @@ class MakersBnB < Sinatra::Base
   end
 
   get '/' do
-    redirect '/listings'
+    erb :index
   end
 
   get '/listings/new' do
@@ -23,6 +23,10 @@ class MakersBnB < Sinatra::Base
   get '/listings' do
     @spaces = Spaces.all
     erb :listings
+  end
+
+  post '/users/new' do
+    redirect '/listings'
   end
 
   run! if app_file == $0
