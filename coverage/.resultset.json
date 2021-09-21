@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/app.rb": {
+      "/Users/student/projects/MakersBnb/app.rb": {
         "lines": [
           1,
           1,
@@ -38,7 +38,7 @@
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/lib/spaces.rb": {
+      "/Users/student/projects/MakersBnb/lib/spaces.rb": {
         "lines": [
           1,
           null,
@@ -84,7 +84,7 @@
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/spec/features/add_space_spec.rb": {
+      "/Users/student/projects/MakersBnb/spec/features/add_space_spec.rb": {
         "lines": [
           1,
           1,
@@ -103,7 +103,7 @@
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/spec/features/registration_spec.rb": {
+      "/Users/student/projects/MakersBnb/spec/features/registration_spec.rb": {
         "lines": [
           1,
           1,
@@ -117,7 +117,7 @@
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/spec/features/viewing_spaces_spec.rb": {
+      "/Users/student/projects/MakersBnb/spec/features/viewing_spaces_spec.rb": {
         "lines": [
           1,
           1,
@@ -131,7 +131,7 @@
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/spec/listings_spec.rb": {
+      "/Users/student/projects/MakersBnb/spec/listings_spec.rb": {
         "lines": [
           1,
           null,
@@ -151,7 +151,7 @@
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/spec/spaces_spec.rb": {
+      "/Users/student/projects/MakersBnb/spec/spaces_spec.rb": {
         "lines": [
           1,
           null,
@@ -179,12 +179,56 @@
           1,
           1,
           1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/student/projects/MakersBnb/spec/user_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/student/projects/MakersBnb/lib/user.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          0,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
           null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1632236207
+    "timestamp": 1632239141
   }
 }
