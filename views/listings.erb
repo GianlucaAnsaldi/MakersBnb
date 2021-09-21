@@ -1,0 +1,8 @@
+<h1> Maker's BnB </h1>
+
+<ul>
+  <% @spaces.each do |space| %>
+    <h2> <%= space.name %>:   <%= space.description %> </h2>
+    <p> <%= space.price %> </p>
+  <% end %>
+</ul>

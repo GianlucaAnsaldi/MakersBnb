@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/app.rb": {
+      "/Users/jake/Projects/MakersBnb/app.rb": {
         "lines": [
           1,
           1,
@@ -16,10 +16,95 @@
           null,
           null,
           1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/jake/Projects/MakersBnb/spec/features/viewing_spaces_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/jake/Projects/MakersBnb/spec/listings_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/jake/Projects/MakersBnb/lib/spaces.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          2,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          0,
+          null,
+          2,
+          null,
+          2,
+          2,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/jake/Projects/MakersBnb/spec/spaces_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
           null
         ]
       }
     },
-    "timestamp": 1632153407
+    "timestamp": 1632223587
   }
 }
