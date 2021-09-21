@@ -56,6 +56,7 @@ Any signed-up user can request to hire any space for one night, and this should 
 
 
 Table: spaces
+
 |------|--------|---------------|-----------|
 |  id  |  name  |  description  |   price   |
 |------|--------|---------------|-----------|
