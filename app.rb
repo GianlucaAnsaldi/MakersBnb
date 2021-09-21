@@ -8,7 +8,7 @@ class MakersBnB < Sinatra::Base
   end
 
   get '/' do
-    'Hello World'
+    redirect '/listings'
   end
 
   get '/listings/new' do
@@ -21,7 +21,6 @@ class MakersBnB < Sinatra::Base
   end
   
   get '/listings' do
-    'MakersBnB'
     @spaces = Spaces.all
     erb :listings
   end
