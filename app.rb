@@ -25,5 +25,9 @@ class MakersBnB < Sinatra::Base
     erb :listings
   end
 
+  get '/book' do
+    erb :book
+  end
+
   run! if app_file == $0
 end
