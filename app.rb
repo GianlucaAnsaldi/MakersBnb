@@ -16,7 +16,7 @@ class MakersBnB < Sinatra::Base
   end
 
   post '/listings/space_added' do
-    Space.add(name: params['name'], description: params['description'], price: params['price'])
+    Spaces.add(name: params['name'], description: params['description'], price: params['price'])
     redirect '/listings'
   end
 

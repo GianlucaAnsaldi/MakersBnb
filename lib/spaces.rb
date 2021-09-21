@@ -1,6 +1,6 @@
 require 'pg'
 
-class Space
+class Spaces
   attr_reader :name, :description, :price
   
   def initialize(name:, description:, price:)
