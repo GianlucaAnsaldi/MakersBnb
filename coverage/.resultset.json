@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/app.rb": {
+      "/Users/danielclements/Projects/MakersBnb/app.rb": {
         "lines": [
           1,
           1,
@@ -19,23 +19,51 @@
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/spec/space_spec.rb": {
+      "/Users/danielclements/Projects/MakersBnb/spec/features/add_space_spec.rb": {
         "lines": [
           1,
+          1,
+          1,
+          1,
           null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           null,
           null,
           null,
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/lib/space.rb": {
+      "/Users/danielclements/Projects/MakersBnb/spec/space_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/danielclements/Projects/MakersBnb/lib/space.rb": {
         "lines": [
           1,
           null,
@@ -43,21 +71,21 @@
           1,
           null,
           1,
-          1,
-          1,
-          1,
+          2,
+          2,
+          2,
           null,
           null,
           1,
-          1,
-          1,
+          2,
+          2,
           null,
           0,
           null,
           null,
-          1,
-          1,
-          1,
+          2,
+          null,
+          2,
           null,
           null,
           null,
@@ -70,6 +98,6 @@
         ]
       }
     },
-    "timestamp": 1632222023
+    "timestamp": 1632222870
   }
 }
