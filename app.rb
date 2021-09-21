@@ -1,6 +1,6 @@
 require 'sinatra/base'
 require 'sinatra/reloader'
-require './lib/space'
+require './lib/spaces'
 
 class MakersBnB < Sinatra::Base
   configure :development do
@@ -18,6 +18,12 @@ class MakersBnB < Sinatra::Base
   post '/listings/space_added' do
     Spaces.add(name: params['name'], description: params['description'], price: params['price'])
     redirect '/listings'
+  end
+  
+  get '/listings' do
+    'MakersBnB'
+    @spaces = Spaces.all
+    erb :listings
   end
 
   run! if app_file == $0

@@ -1,6 +1,7 @@
 
 require 'simplecov'
 require 'simplecov-console'
+require_relative 'set_up_test_database'
 
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
   SimpleCov::Formatter::Console,
@@ -23,6 +24,9 @@ require 'rspec'
 Capybara.app = MakersBnB
 
 RSpec.configure do |config|
+  config.before(:each) do
+    set_up_test_database
+  end
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
