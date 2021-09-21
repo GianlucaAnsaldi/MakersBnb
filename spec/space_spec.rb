@@ -3,9 +3,10 @@ require 'space'
 describe Space do
 
   describe '.add' do 
-    it 'adds a lisitng' do 
-      space = Space.add
-      expect(space).to be_a (Space)
+    it 'adds a listing' do 
+      space = Space.add(name: 'Loft', description: 'A nice loft', price: 90)
+      expect(space).to be_a Space
+      
     end 
   end 
 
