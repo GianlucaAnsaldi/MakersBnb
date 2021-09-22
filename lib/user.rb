@@ -23,5 +23,13 @@ class User
     )
   end
   
+  def self.login(email:, password:)
+    if ENV['RACK_ENV'] == 'test'
+      connection = PG.connect(dbname: 'makersbnb_test')
+    else
+      connection = PG.connect(dbname: 'makersbnb')
+    end
+    account = connection.exec("SELECT * FROM users WHERE email = '#{email}' LIMIT 1;")
+    raise "PASSWORD INCORRECT!" if account.password != password
 end
     

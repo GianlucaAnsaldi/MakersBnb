@@ -29,5 +29,15 @@ class MakersBnB < Sinatra::Base
     redirect '/listings'
   end
 
-  run! if app_file == $0
+  get '/sessions/new' do
+    erb :sessions
+  end
+
+post '/users/verify' do
+  User.login
+  redirect '/listings'
+end
+
+run! if app_file == $0
+
 end
