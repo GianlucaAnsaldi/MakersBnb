@@ -31,9 +31,7 @@ class User
     end
     result = connection.exec("SELECT * FROM users WHERE email = '#{email}' LIMIT 1;")
     account = result.map { |account| account }
-
-    print account
-    raise "PASSWORD INCORRECT!" if account.password != password2
+    raise "NO ACCOUNT FOUND!" if account[0] == nil
+    raise "PASSWORD INCORRECT!" if account[0]["password"] != password
   end 
 end
-    
