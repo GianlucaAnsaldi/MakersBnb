@@ -29,7 +29,11 @@ class User
     else
       connection = PG.connect(dbname: 'makersbnb')
     end
-    account = connection.exec("SELECT * FROM users WHERE email = '#{email}' LIMIT 1;")
-    raise "PASSWORD INCORRECT!" if account.password != password
+    result = connection.exec("SELECT * FROM users WHERE email = '#{email}' LIMIT 1;")
+    account = result.map { |account| account }
+
+    print account
+    raise "PASSWORD INCORRECT!" if account.password != password2
+  end 
 end
     

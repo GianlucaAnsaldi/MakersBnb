@@ -1,6 +1,7 @@
 require 'sinatra/base'
 require 'sinatra/reloader'
 require './lib/spaces'
+require './lib/user'
 
 class MakersBnB < Sinatra::Base
   configure :development do
@@ -26,6 +27,7 @@ class MakersBnB < Sinatra::Base
   end
 
   post '/users/new' do
+    User.create(email: params['email'], password: params['password'])
     redirect '/listings'
   end
 
@@ -33,10 +35,10 @@ class MakersBnB < Sinatra::Base
     erb :sessions
   end
 
-post '/users/verify' do
-  User.login
-  redirect '/listings'
-end
+  post '/users/verify' do
+    User.login(email: params['email'], password: params['password'])
+    redirect '/listings'
+  end
 
 run! if app_file == $0
 
