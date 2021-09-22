@@ -40,6 +40,10 @@ class MakersBnB < Sinatra::Base
     redirect '/listings'
   end
 
+  get '/requests' do
+    erb :requests
+  end
+
 run! if app_file == $0
 
 end
