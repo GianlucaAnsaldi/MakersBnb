@@ -256,6 +256,45 @@
           null
         ]
       },
+      "/Users/tom/Desktop/Projects/MakersBnb/spec/requests_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/tom/Desktop/Projects/MakersBnb/lib/requests.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          0,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/tom/Desktop/Projects/MakersBnb/spec/spaces_spec.rb": {
         "lines": [
           1,
@@ -309,6 +348,6 @@
         ]
       }
     },
-    "timestamp": 1632321340
+    "timestamp": 1632326192
   }
 }
