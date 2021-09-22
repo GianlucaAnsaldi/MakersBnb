@@ -1,10 +1,11 @@
 require 'pg'
 
 class User
-  attr_reader :email, :password
+  attr_reader :id, :email, :password
   
 
-  def initialize(email:, password:)
+  def initialize(id:, email:, password:)
+    @id = id
     @email = email
     @password = password
   end
@@ -17,9 +18,10 @@ class User
     end
     raise "PLEASE ENTER A VALID EMAIL ADDRESS!" if !email.to_s.include?('@')
     raise "DUPLICATE ACCOUNT REQUEST!" if User.duplicate?(email: email, password: password)
-    result = connection.exec("INSERT INTO users (email, password) VALUES ('#{email}','#{password}') RETURNING email, password;")
+    result = connection.exec("INSERT INTO users (email, password) VALUES ('#{email}','#{password}') RETURNING id, email, password;")
 
     User.new(
+      id: result[0]['id'],
       email: result[0]['email'],
       password: result[0]['password']
     )
