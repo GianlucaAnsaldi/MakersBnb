@@ -14,7 +14,7 @@ class Spaces
 
 
   def self.all
-    connection = establish_connection
+    connection = establish_connection()
     results = connection.exec("SELECT * FROM spaces;")
     results.map do |row|
       Spaces.new(id: row['id'], name: row['name'], description: row['description'], price: row['price'])
@@ -22,7 +22,7 @@ class Spaces
   end
   
   def self.add(name:, description:, price:)
-    connection = establish_connection
+    connection = establish_connection()
     result = connection.exec("INSERT INTO spaces (name, description, price) VALUES ('#{name}','#{description}','#{price}') RETURNING id, name, description, price;")
 
     Spaces.new(
@@ -34,7 +34,7 @@ class Spaces
   end
 
   def self.find(id:)
-    connection = establish_connection
+    connection = establish_connection()
     result = connection.exec("SELECT * FROM spaces WHERE id='#{id}';")
 
     Spaces.new(

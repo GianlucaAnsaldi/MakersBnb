@@ -13,7 +13,7 @@ attr_reader :id, :user_id, :space_id, :is_approved
   end
 
   def self.generate(user_id:, space_id:)
-    connection = establish_connection
+    connection = establish_connection()
     result = connection.exec("INSERT INTO requests (user_id, space_id) VALUES ('#{user_id}', '#{space_id}') RETURNING id, user_id, space_id, is_approved;")
 
     Request.new(
