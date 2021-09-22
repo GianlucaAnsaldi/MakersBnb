@@ -2,7 +2,7 @@
 
 <ul>
   <% @spaces.each do |space| %>
-    <h2> <a href='/book'> <%= space.name %> </a> : <%= space.description %> </h2>
+    <h2> <a href='/listings/<%= space.id %>'> <%= space.name %> </a> : <%= space.description %> </h2>
     <p> <%= space.price %> </p>
   <% end %>
 </ul>
