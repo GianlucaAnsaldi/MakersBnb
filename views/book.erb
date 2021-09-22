@@ -1,6 +1,12 @@
 <h1> Booking page </h1>
 
-<form action='/request_booking' method='post'>
-  <input type='text' name='Date'>
-  <input type='submit' name='request_booking'>
+
+
+<ul>
+    <h2><%= @space.name %> </a> : <%= @space.description %> </h2>
+    <p> <%= @space.price %> </p>
+</ul>
+
+<form action='/listings/<%= @space.id %>/request_booking' method='post'>
+  <input type='submit' value='Request booking'>
 </form>

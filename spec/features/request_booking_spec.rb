@@ -9,7 +9,7 @@ feature 'User can book a space' do
     expect(page).to have_content('1000')
 
     click_button 'Request booking'
-    expect(current_path).to be '/listings'
+    expect(current_path).to eq '/listings'
     expect(page).to have_content('Loft')
     expect(page).to have_content('lovely loft')
     expect(page).to have_content('1000')

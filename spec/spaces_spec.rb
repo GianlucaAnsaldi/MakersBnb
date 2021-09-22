@@ -36,12 +36,11 @@ describe Spaces do
     it 'returns the requested spaces object' do
       space = Spaces.add(name: 'Loft', description: 'A nice loft', price: 90)
       results = Spaces.find(id: space.id)
+
       expect(results.id).to eq space.id
       expect(results.name).to eq('Loft')
       expect(results.description).to eq('A nice loft')
       expect(results.price).to eq('90')
     end
   end
-
-
 end

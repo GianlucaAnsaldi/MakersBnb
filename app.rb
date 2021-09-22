@@ -1,6 +1,7 @@
 require 'sinatra/base'
 require 'sinatra/reloader'
 require './lib/spaces'
+require './lib/request'
 
 class MakersBnB < Sinatra::Base
   configure :development do
@@ -27,8 +28,12 @@ class MakersBnB < Sinatra::Base
 
   get '/listings/:id' do
     @space = Spaces.find(id: params['id'])
-    p space
-    #erb :book
+    erb :book
+  end
+
+  post '/listings/:id/request_booking' do
+    Request.generate(id: '1')
+    redirect '/listings'
   end
 
   run! if app_file == $0
