@@ -15,8 +15,8 @@ class User
     else
       connection = PG.connect(dbname: 'makersbnb')
     end
-    raise "PLEASE ENTER A VALID EMAIL ADDRESS!" if @email.exclude?("@")
-    raise "DUPLICATE ACCOUNT REQUEST!" if User.duplicate?(email: @email, password: @password)
+    raise "PLEASE ENTER A VALID EMAIL ADDRESS!" if !email.to_s.include?('@')
+    raise "DUPLICATE ACCOUNT REQUEST!" if User.duplicate?(email: email, password: password)
     result = connection.exec("INSERT INTO users (email, password) VALUES ('#{email}','#{password}') RETURNING email, password;")
 
     User.new(
