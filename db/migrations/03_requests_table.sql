@@ -1,0 +1,2 @@
+CREATE TABLE requests (id SERIAL PRIMARY KEY, space_id INTEGER REFERENCES spaces (id), is_approved BOOLEAN DEFAULT FALSE);
+

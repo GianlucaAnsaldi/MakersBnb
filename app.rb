@@ -2,12 +2,15 @@ require 'sinatra/base'
 require 'sinatra/reloader'
 require './lib/spaces'
 require './lib/user'
+require './lib/request'
 
 class MakersBnB < Sinatra::Base
   configure :development do
     register Sinatra::Reloader
   end
-
+  
+  enable :sessions
+  
   get '/' do
     erb :index
   end
@@ -27,7 +30,8 @@ class MakersBnB < Sinatra::Base
   end
 
   post '/users/new' do
-    User.create(email: params['email'], password: params['password'])
+    @user = User.create(email: params['email'], password: params['password'])
+    $user_id = @user.id
     redirect '/listings'
   end
 
@@ -44,6 +48,15 @@ class MakersBnB < Sinatra::Base
     erb :requests
   end
 
-run! if app_file == $0
+  get '/listings/:id' do
+    @space = Spaces.find(id: params['id'])
+    erb :book
+  end
 
+  post '/listings/:id/request_booking' do
+    Request.generate(user_id: $user_id, space_id: params['id'])
+    redirect '/listings'
+  end
+
+  run! if app_file == $0
 end
