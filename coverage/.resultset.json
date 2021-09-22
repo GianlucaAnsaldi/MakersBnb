@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/app.rb": {
+      "/Users/danielclements/Projects/MakersBnb/app.rb": {
         "lines": [
           1,
           1,
@@ -27,8 +27,8 @@
           null,
           null,
           1,
-          5,
-          5,
+          4,
+          4,
           null,
           null,
           1,
@@ -38,14 +38,14 @@
           null,
           1,
           1,
-          1,
+          0,
           null,
           null,
           1,
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/lib/spaces.rb": {
+      "/Users/danielclements/Projects/MakersBnb/lib/spaces.rb": {
         "lines": [
           1,
           null,
@@ -62,29 +62,29 @@
           null,
           null,
           1,
-          6,
-          6,
+          5,
+          5,
           null,
           0,
           null,
+          5,
+          5,
           6,
-          6,
+          null,
+          null,
+          null,
+          1,
+          7,
+          7,
+          null,
+          0,
+          null,
+          7,
+          null,
           7,
           null,
           null,
           null,
-          1,
-          6,
-          6,
-          null,
-          0,
-          null,
-          6,
-          null,
-          6,
-          null,
-          null,
-          null,
           null,
           null,
           null,
@@ -109,16 +109,18 @@
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/lib/request.rb": {
+      "/Users/danielclements/Projects/MakersBnb/lib/request.rb": {
         "lines": [
           1,
           null,
           1,
           null,
           1,
+          null,
           1,
-          1,
-          1,
+          0,
+          0,
+          0,
           null,
           null,
           1,
@@ -129,7 +131,7 @@
           null,
           2,
           null,
-          1,
+          2,
           null,
           null,
           null,
@@ -138,7 +140,7 @@
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/spec/features/add_space_spec.rb": {
+      "/Users/danielclements/Projects/MakersBnb/spec/features/add_space_spec.rb": {
         "lines": [
           1,
           1,
@@ -157,7 +159,7 @@
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/spec/features/request_booking_spec.rb": {
+      "/Users/danielclements/Projects/MakersBnb/spec/features/request_booking_spec.rb": {
         "lines": [
           1,
           1,
@@ -170,15 +172,15 @@
           1,
           null,
           1,
-          1,
-          1,
-          1,
-          1,
+          0,
+          0,
+          0,
+          0,
           null,
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/spec/features/viewing_spaces_spec.rb": {
+      "/Users/danielclements/Projects/MakersBnb/spec/features/viewing_spaces_spec.rb": {
         "lines": [
           1,
           1,
@@ -191,18 +193,21 @@
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/spec/request_spec.rb": {
+      "/Users/danielclements/Projects/MakersBnb/spec/request_spec.rb": {
         "lines": [
           1,
+          1,
           null,
           1,
-          2,
+          null,
           null,
           1,
           1,
+          null,
+          null,
           1,
           1,
-          1,
+          null,
           null,
           0,
           0,
@@ -212,7 +217,7 @@
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/spec/spaces_spec.rb": {
+      "/Users/danielclements/Projects/MakersBnb/spec/spaces_spec.rb": {
         "lines": [
           1,
           null,
@@ -263,6 +268,6 @@
         ]
       }
     },
-    "timestamp": 1632322569
+    "timestamp": 1632324667
   }
 }

@@ -2,10 +2,12 @@ require 'pg'
 
 class Request
 
-  def initialize(id:, space_id:, approved:)
+attr_reader :id, :space_id, :is_approved
+
+  def initialize(id:, space_id:, is_approved:)
     @id = id
     @space_id = space_id
-    @approved = approved
+    @is_approved = is_approved
   end
 
   def self.generate(space_id:)
@@ -19,7 +21,7 @@ class Request
     Request.new(
       id: result[0]['id'],
       space_id: result[0]['space_id'],
-      approved: result[0]['approved']
+      approved: result[0]['is_approved']
     )
   end
 end
