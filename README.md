@@ -7,7 +7,7 @@ Nights for which a space has already been booked should not be available for use
 Until a user has confirmed a booking request, that space can still be booked for that night.
 
 ## MVP
-
+  ```
   As a user
   So that I can browse in the app
   I would like to see a list of spaces
@@ -19,9 +19,10 @@ Until a user has confirmed a booking request, that space can still be booked for
   As a user
   So that I can provide details of my space
   I would like to add name, short description and price per night of my space
-
+  ```
 # User stories
 
+```
 Any signed-up user can list a new space.
 1: signed-up user
   As a potential user
@@ -53,7 +54,7 @@ Any signed-up user can request to hire any space for one night, and this should 
   As a user
   So that I can select the appropriate guest for my space
   I would like to review a booking request
-
+```
 
 Table: spaces
 

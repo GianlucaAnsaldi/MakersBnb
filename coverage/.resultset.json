@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/danielclements/Projects/MakersBnb/app.rb": {
+      "/Users/jake/Projects/MakersBnb/app.rb": {
         "lines": [
           1,
           1,
@@ -27,8 +27,8 @@
           null,
           null,
           1,
-          4,
-          4,
+          5,
+          5,
           null,
           null,
           1,
@@ -38,14 +38,14 @@
           null,
           1,
           1,
-          0,
+          1,
           null,
           null,
           1,
           null
         ]
       },
-      "/Users/danielclements/Projects/MakersBnb/lib/spaces.rb": {
+      "/Users/jake/Projects/MakersBnb/lib/spaces.rb": {
         "lines": [
           1,
           null,
@@ -54,23 +54,23 @@
           null,
           null,
           1,
-          15,
-          15,
-          15,
-          15,
+          16,
+          16,
+          16,
+          16,
           null,
           null,
           null,
           1,
-          5,
-          5,
-          null,
-          0,
-          null,
-          5,
-          5,
+          6,
           6,
           null,
+          0,
+          null,
+          6,
+          6,
+          7,
+          null,
           null,
           null,
           1,
@@ -109,7 +109,7 @@
           null
         ]
       },
-      "/Users/danielclements/Projects/MakersBnb/lib/request.rb": {
+      "/Users/jake/Projects/MakersBnb/lib/request.rb": {
         "lines": [
           1,
           null,
@@ -118,9 +118,9 @@
           1,
           null,
           1,
-          0,
-          0,
-          0,
+          2,
+          2,
+          2,
           null,
           null,
           1,
@@ -140,7 +140,7 @@
           null
         ]
       },
-      "/Users/danielclements/Projects/MakersBnb/spec/features/add_space_spec.rb": {
+      "/Users/jake/Projects/MakersBnb/spec/features/add_space_spec.rb": {
         "lines": [
           1,
           1,
@@ -159,7 +159,7 @@
           null
         ]
       },
-      "/Users/danielclements/Projects/MakersBnb/spec/features/request_booking_spec.rb": {
+      "/Users/jake/Projects/MakersBnb/spec/features/request_booking_spec.rb": {
         "lines": [
           1,
           1,
@@ -172,15 +172,15 @@
           1,
           null,
           1,
-          0,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
+          1,
           null,
           null
         ]
       },
-      "/Users/danielclements/Projects/MakersBnb/spec/features/viewing_spaces_spec.rb": {
+      "/Users/jake/Projects/MakersBnb/spec/features/viewing_spaces_spec.rb": {
         "lines": [
           1,
           1,
@@ -193,31 +193,27 @@
           null
         ]
       },
-      "/Users/danielclements/Projects/MakersBnb/spec/request_spec.rb": {
+      "/Users/jake/Projects/MakersBnb/spec/request_spec.rb": {
         "lines": [
           1,
           1,
           null,
           1,
           null,
-          null,
+          1,
+          1,
           1,
           1,
           null,
-          null,
           1,
           1,
-          null,
-          null,
-          0,
-          0,
-          0,
+          1,
           null,
           null,
           null
         ]
       },
-      "/Users/danielclements/Projects/MakersBnb/spec/spaces_spec.rb": {
+      "/Users/jake/Projects/MakersBnb/spec/spaces_spec.rb": {
         "lines": [
           1,
           null,
@@ -268,6 +264,6 @@
         ]
       }
     },
-    "timestamp": 1632324667
+    "timestamp": 1632326234
   }
 }

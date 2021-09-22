@@ -21,7 +21,7 @@ attr_reader :id, :space_id, :is_approved
     Request.new(
       id: result[0]['id'],
       space_id: result[0]['space_id'],
-      approved: result[0]['is_approved']
+      is_approved: result[0]['is_approved']
     )
   end
 end
