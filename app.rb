@@ -25,8 +25,10 @@ class MakersBnB < Sinatra::Base
     erb :listings
   end
 
-  get '/book' do
-    erb :book
+  get '/listings/:id' do
+    @space = Spaces.find(id: params['id'])
+    p space
+    #erb :book
   end
 
   run! if app_file == $0
