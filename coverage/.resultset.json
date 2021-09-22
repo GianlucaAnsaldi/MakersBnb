@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/app.rb": {
+      "/Users/tom/Desktop/Projects/MakersBnb/app.rb": {
         "lines": [
           1,
           1,
@@ -67,7 +67,7 @@
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/lib/spaces.rb": {
+      "/Users/tom/Desktop/Projects/MakersBnb/lib/spaces.rb": {
         "lines": [
           1,
           null,
@@ -131,7 +131,7 @@
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/lib/user.rb": {
+      "/Users/tom/Desktop/Projects/MakersBnb/lib/user.rb": {
         "lines": [
           1,
           null,
@@ -187,7 +187,7 @@
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/lib/request.rb": {
+      "/Users/tom/Desktop/Projects/MakersBnb/lib/request.rb": {
         "lines": [
           1,
           null,
@@ -220,7 +220,7 @@
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/spec/features/add_space_spec.rb": {
+      "/Users/tom/Desktop/Projects/MakersBnb/spec/features/add_space_spec.rb": {
         "lines": [
           1,
           1,
@@ -239,28 +239,11 @@
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/spec/features/login_spec.rb": {
+      "/Users/tom/Desktop/Projects/MakersBnb/spec/features/login_spec.rb": {
         "lines": [
           1,
           1,
           1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/spec/features/registration_spec.rb": {
-        "lines": [
           1,
           1,
           1,
@@ -273,7 +256,20 @@
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/spec/features/request_booking_spec.rb": {
+      "/Users/tom/Desktop/Projects/MakersBnb/spec/features/registration_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/tom/Desktop/Projects/MakersBnb/spec/features/request_booking_spec.rb": {
         "lines": [
           1,
           1,
@@ -295,9 +291,8 @@
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/spec/features/view_requests_spec.rb": {
+      "/Users/tom/Desktop/Projects/MakersBnb/spec/features/view_requests_spec.rb": {
         "lines": [
-          1,
           1,
           1,
           1,
@@ -310,7 +305,7 @@
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/spec/features/viewing_spaces_spec.rb": {
+      "/Users/tom/Desktop/Projects/MakersBnb/spec/features/viewing_spaces_spec.rb": {
         "lines": [
           1,
           1,
@@ -323,7 +318,7 @@
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/spec/request_spec.rb": {
+      "/Users/tom/Desktop/Projects/MakersBnb/spec/request_spec.rb": {
         "lines": [
           1,
           1,
@@ -346,7 +341,7 @@
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/spec/spaces_spec.rb": {
+      "/Users/tom/Desktop/Projects/MakersBnb/spec/spaces_spec.rb": {
         "lines": [
           1,
           null,
@@ -396,7 +391,7 @@
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/spec/user_spec.rb": {
+      "/Users/tom/Desktop/Projects/MakersBnb/spec/user_spec.rb": {
         "lines": [
           1,
           null,
@@ -416,6 +411,6 @@
         ]
       }
     },
-    "timestamp": 1632330451
+    "timestamp": 1632342214
   }
 }
