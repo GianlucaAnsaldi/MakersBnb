@@ -32,7 +32,7 @@ class MakersBnB < Sinatra::Base
   end
 
   post '/listings/:id/request_booking' do
-    Request.generate(id: '1')
+    Request.generate(space_id: '1')
     redirect '/listings'
   end
 
