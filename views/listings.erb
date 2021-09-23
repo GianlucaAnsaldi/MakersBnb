@@ -1,34 +1,23 @@
-<html>
-<head>
 <style>
-body {
-  background-color: lightblue;
-}
-
-h1 {
-  color: white;
-  text-align: center;
-}
-
-h2 {
-  font-family: verdana;
-  font-size: 25px;
-}
-
-p {
-  font-family: verdana;
-  font-size: 20px;
-}
-
-</head>
+body {background-color: lightblue;}
+h1 {color: white;
+  text-align: center;}
+p2 {font-family: verdana;
+  font-size: 18px;}
+p {font-family: verdana;
+  font-size: 13px;}
 </style>
+
+<head>
+<link rel="css" href="./css.erb">
+</head>
 
 <h1> Maker's BnB </h1> <h2><a href='/requests'>  My requests </a></h2>
 
 <ul>
   <% @spaces.each do |space| %>
-    <h2> <a href='/listings/<%= space.id %>'> <%= space.name %> </a> : <%= space.description %> </h2>
-    <p> <%= space.price %> </p>
+    <p2> <a href='/listings/<%= space.id %>'> <%= space.name %> </a> : <%= space.description %> </p2>
+    <p> £<%= space.price %> per night </p><br>
   <% end %>
 </ul>
 
