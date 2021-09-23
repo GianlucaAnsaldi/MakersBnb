@@ -5,8 +5,8 @@ describe Request do
 
   describe '.generate' do
     it 'generates a new booking request' do
-      space = Spaces.add(name:'Place', description:'A nice place', price:'27')
       user = User.create(email: 'test@example.com', password: 'secret123')
+      space = Spaces.add(name:'Place', description:'A nice place', price:'27', owner_id: 1)
       request = Request.generate(user_id: '1', space_id: '1')
 
       expect(request).to be_a Request

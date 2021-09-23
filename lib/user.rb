@@ -26,10 +26,15 @@ class User
   
   def self.login(email:, password:)
     connection = establish_connection()
-    result = connection.exec("SELECT * FROM users WHERE email = '#{email}' LIMIT 1;")
+    result = connection.exec("SELECT * FROM users WHERE email = '#{email}';")
     account = result.map { |account| account }
     raise "NO ACCOUNT FOUND!" if account[0] == nil
     raise "PASSWORD INCORRECT!" if account[0]["password"] != password
+    User.new(
+      id: result[0]['id'],
+      email: result[0]['email'],
+      password: result[0]['password']
+    )
   end 
 
   def self.duplicate?(email:, password:)
