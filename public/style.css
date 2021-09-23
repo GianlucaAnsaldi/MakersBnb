@@ -11,10 +11,18 @@ h2 {
   margin-left: 200px;
 }
 
-b {
+p {
   margin-left: 200px;
+  font-family: verdana;
+  font-size: 13px;
 }
 
-b2 {
+p2 {
   margin-left: 200px;
+  font-family: verdana;
+  font-size: 18px;
+}
+
+div {
+  text-align: center
 }

@@ -1,22 +1,18 @@
-<style>
-body {background-color: lightblue;}
-h1 {color: white;
-  text-align: center;}
-  p2 {font-family: verdana;
-  font-size: 18px;}
-p {font-family: verdana;
-  font-size: 13px;}
-</style>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+<body>
 
 <h1> Booking page </h1>
 
-
-
-<ul>
-    <p2><%= @space.name %> </a> : <%= @space.description %> </p2>
-    <p> <%= @space.price %> </p>
-</ul>
+  <p2><%= @space.name %> </a> : <%= @space.description %> </p2>
+  <p> <%= @space.price %> </p>
 
 <form action='/listings/<%= @space.id %>/request_booking' method='post'>
   <input type='submit' value='Request booking'>
 </form>
+
+</body>
+</html>
