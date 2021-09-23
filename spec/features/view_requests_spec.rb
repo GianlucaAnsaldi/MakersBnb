@@ -1,8 +1,6 @@
 feature 'requests' do
   scenario 'view booking request' do
-    visit '/'
-    test_user_info()
-    click_button 'Sign up'
+    sign_up_and_login()
     
     click_link 'My request'
     expect(page).to have_content 'Your requests'

@@ -1,8 +1,6 @@
 feature 'User registration' do
   scenario 'a user can sign up' do
-    visit '/'
-    test_user_info()
-    click_button 'Sign up'
+    sign_up_and_login()
     
     expect(current_path).to eq '/listings'
   end

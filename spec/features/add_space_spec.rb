@@ -1,12 +1,6 @@
 feature 'add space' do
   scenario 'list a new space' do
-    visit '/'
-    test_user_info()
-    click_button 'Sign up'
-    visit '/'
-    click_button 'Login'
-    test_user_info()
-    click_button 'Login'
+    sign_up_and_login()
     
     visit('/listings')
     click_button('Add Listing')

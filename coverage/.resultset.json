@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/app.rb": {
+      "/Users/tom/Desktop/Projects/MakersBnb/app.rb": {
         "lines": [
           1,
           1,
@@ -18,7 +18,7 @@
           null,
           null,
           1,
-          10,
+          6,
           null,
           null,
           1,
@@ -32,8 +32,8 @@
           null,
           null,
           1,
-          15,
-          15,
+          11,
+          11,
           null,
           null,
           1,
@@ -43,13 +43,13 @@
           null,
           null,
           1,
-          4,
+          0,
           null,
           null,
           1,
-          4,
-          4,
-          4,
+          0,
+          0,
+          0,
           null,
           null,
           1,
@@ -73,7 +73,7 @@
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/lib/spaces.rb": {
+      "/Users/tom/Desktop/Projects/MakersBnb/lib/spaces.rb": {
         "lines": [
           1,
           1,
@@ -92,9 +92,9 @@
           null,
           null,
           1,
-          16,
-          16,
-          16,
+          12,
+          12,
+          12,
           7,
           null,
           null,
@@ -129,18 +129,18 @@
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/lib/dbconnect.rb": {
+      "/Users/tom/Desktop/Projects/MakersBnb/lib/dbconnect.rb": {
         "lines": [
           1,
-          79,
-          79,
+          71,
+          71,
           null,
           0,
           null,
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/lib/user.rb": {
+      "/Users/tom/Desktop/Projects/MakersBnb/lib/user.rb": {
         "lines": [
           1,
           1,
@@ -150,9 +150,9 @@
           null,
           null,
           1,
-          20,
-          20,
-          20,
+          16,
+          16,
+          16,
           null,
           null,
           1,
@@ -169,12 +169,12 @@
           null,
           null,
           1,
-          5,
-          5,
-          9,
-          5,
-          4,
-          4,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
           null,
           null,
           null,
@@ -190,7 +190,7 @@
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/lib/request.rb": {
+      "/Users/tom/Desktop/Projects/MakersBnb/lib/request.rb": {
         "lines": [
           1,
           1,
@@ -233,14 +233,8 @@
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/spec/features/add_space_spec.rb": {
+      "/Users/tom/Desktop/Projects/MakersBnb/spec/features/add_space_spec.rb": {
         "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
           1,
           1,
           1,
@@ -259,14 +253,8 @@
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/spec/features/login_spec.rb": {
+      "/Users/tom/Desktop/Projects/MakersBnb/spec/features/login_spec.rb": {
         "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
           1,
           1,
           1,
@@ -276,10 +264,8 @@
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/spec/features/registration_spec.rb": {
+      "/Users/tom/Desktop/Projects/MakersBnb/spec/features/registration_spec.rb": {
         "lines": [
-          1,
-          1,
           1,
           1,
           1,
@@ -289,14 +275,8 @@
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/spec/features/request_booking_spec.rb": {
+      "/Users/tom/Desktop/Projects/MakersBnb/spec/features/request_booking_spec.rb": {
         "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
           1,
           1,
           1,
@@ -318,10 +298,8 @@
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/spec/features/view_requests_spec.rb": {
+      "/Users/tom/Desktop/Projects/MakersBnb/spec/features/view_requests_spec.rb": {
         "lines": [
-          1,
-          1,
           1,
           1,
           1,
@@ -332,7 +310,7 @@
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/spec/features/viewing_spaces_spec.rb": {
+      "/Users/tom/Desktop/Projects/MakersBnb/spec/features/viewing_spaces_spec.rb": {
         "lines": [
           1,
           1,
@@ -346,18 +324,14 @@
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/spec/features/visualizing_incoming_requests_spec.rb": {
+      "/Users/tom/Desktop/Projects/MakersBnb/spec/features/visualizing_incoming_requests_spec.rb": {
         "lines": [
           1,
           1,
           1,
+          null,
           1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
+          null,
           1,
           1,
           1,
@@ -377,7 +351,7 @@
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/spec/request_spec.rb": {
+      "/Users/tom/Desktop/Projects/MakersBnb/spec/request_spec.rb": {
         "lines": [
           1,
           1,
@@ -422,7 +396,7 @@
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/spec/spaces_spec.rb": {
+      "/Users/tom/Desktop/Projects/MakersBnb/spec/spaces_spec.rb": {
         "lines": [
           1,
           1,
@@ -476,7 +450,7 @@
           null
         ]
       },
-      "/Users/gianlucaansaldi/Makers/Course/projects/MakersBnb/spec/user_spec.rb": {
+      "/Users/tom/Desktop/Projects/MakersBnb/spec/user_spec.rb": {
         "lines": [
           1,
           null,
@@ -496,6 +470,6 @@
         ]
       }
     },
-    "timestamp": 1632424562
+    "timestamp": 1632440392
   }
 }

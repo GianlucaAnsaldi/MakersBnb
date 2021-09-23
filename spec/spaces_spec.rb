@@ -5,7 +5,7 @@ describe Spaces do
   describe '.all' do 
     it 'Can return all spaces' do
       connection = PG.connect(dbname: 'makersbnb_test')
-      user = User.create(email: 'test@example.com', password: 'secret123')
+      User.create(email: 'test@example.com', password: 'secret123')
       connection.exec("INSERT INTO spaces (name, description, price, owner_id) VALUES ('loft', 'lovely loft', '1000', 1);")
       connection.exec("INSERT INTO spaces (name, description, price, owner_id) VALUES ('house', 'lovely house', '2000', 1);")
       connection.exec("INSERT INTO spaces (name, description, price, owner_id) VALUES ('shed', 'lovely shed', '50', 1);")

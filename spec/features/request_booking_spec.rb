@@ -1,12 +1,6 @@
 feature 'User can book a space' do
   scenario 'booking a space' do
-    visit '/'
-    test_user_info()
-    click_button 'Sign up'
-    visit '/'
-    click_button 'Login'
-    test_user_info()
-    click_button 'Login'
+    sign_up_and_login()
 
     space = Spaces.add(name: 'Loft', description: 'lovely loft', price: 1000, owner_id: 1)
     visit('/listings')
