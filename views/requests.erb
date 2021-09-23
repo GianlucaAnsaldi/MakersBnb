@@ -1,1 +1,10 @@
 <h1> Your requests </h1>
+
+
+<% @spaces.each do |space| %> 
+  <div style="width:100%">
+    <div style="display: inline-block"><%= space.name %></div>
+    <div style="display: inline-block"><button type="submit" class="msgBtn2" onClick="return false;">Approve</button></div>
+    <div style="display: inline-block"><button class="msgBtnBack">Reject</button></div>
+  </div>
+<% end %>

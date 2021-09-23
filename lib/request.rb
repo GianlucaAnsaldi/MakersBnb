@@ -23,4 +23,17 @@ attr_reader :id, :user_id, :space_id, :is_approved
       is_approved: result[0]['is_approved']
     )
   end
+
+  def self.show_pending(user:)
+    connection = establish_connection()
+    result = connection.exec("SELECT requests.* FROM requests INNER JOIN spaces on requests.space_id=spaces.id WHERE owner_id = '#{user}';")
+    result.map do |row|
+      Request.new(
+        id: row['id'], 
+        user_id: row['user_id'], 
+        space_id: row['space_id'], 
+        is_approved: row['is_approved']
+      )
+    end
+  end
 end

@@ -48,6 +48,9 @@ class MakersBnB < Sinatra::Base
   end
 
   get '/requests' do
+    user_id = session[:user_id]
+    @requests = Request.show_pending(user: user_id)
+    @spaces = @requests.map { |request| Spaces.find(id: request.space_id) }
     erb :requests
   end
 
