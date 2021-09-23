@@ -4,7 +4,9 @@ require './lib/spaces'
 require './lib/user'
 require './lib/request'
 
+
 class MakersBnB < Sinatra::Base
+  
   configure :development do
     register Sinatra::Reloader
   end
