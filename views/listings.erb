@@ -1,8 +1,37 @@
-<h1> Maker's BnB </h1>
+<html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  font-family: verdana;
+  font-size: 25px;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+</head>
+</style>
+
+<h1> Maker's BnB </h1> <h2><a href='/requests'>  My requests </a></h2>
 
 <ul>
   <% @spaces.each do |space| %>
-    <h2> <%= space.name %>:   <%= space.description %> </h2>
+    <h2> <a href='/listings/<%= space.id %>'> <%= space.name %> </a> : <%= space.description %> </h2>
     <p> <%= space.price %> </p>
   <% end %>
 </ul>
+
+<form action='/listings/new'>
+  <input type='submit' value='Add Listing' >
+</form>

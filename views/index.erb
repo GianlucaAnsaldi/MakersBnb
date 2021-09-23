@@ -1,0 +1,31 @@
+<html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+</head>
+</style>
+
+<h1> Welcome to Makers' Bnb </h1>
+
+<form action='/users/new' method='post'>
+  <input type='text' name='email' placeholder='Email address'>
+  <input type='password' name='password' placeholder='Password'>
+  <input type='submit' value='Sign up'>
+</form>
+<br><br>
+<form action='/sessions/new' method='get'>
+  <input type='submit' value='Login'>
+</form>

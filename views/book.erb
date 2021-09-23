@@ -1,0 +1,32 @@
+<html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+</head>
+</style>
+
+<h1> Booking page </h1>
+
+
+
+<ul>
+    <h2><%= @space.name %> </a> : <%= @space.description %> </h2>
+    <p> <%= @space.price %> </p>
+</ul>
+
+<form action='/listings/<%= @space.id %>/request_booking' method='post'>
+  <input type='submit' value='Request booking'>
+</form>
