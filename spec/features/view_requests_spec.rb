@@ -1,8 +1,7 @@
 feature 'requests' do
   scenario 'view booking request' do
     visit '/'
-    fill_in('email', with: 'email@example.com')
-    fill_in('password', with: 'supersecret123')
+    test_user_info()
     click_button 'Sign up'
     
     click_link 'My request'

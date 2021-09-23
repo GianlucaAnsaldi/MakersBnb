@@ -1,4 +1,5 @@
 require 'pg'
+require 'dbconnect'
 
 class User
   attr_reader :id, :email, :password
@@ -11,11 +12,7 @@ class User
   end
   
   def self.create(email:, password:)
-    if ENV['RACK_ENV'] == 'test'
-      connection = PG.connect(dbname: 'makersbnb_test')
-    else
-      connection = PG.connect(dbname: 'makersbnb')
-    end
+    connection = establish_connection()
     raise "PLEASE ENTER A VALID EMAIL ADDRESS!" if !email.to_s.include?('@')
     raise "DUPLICATE ACCOUNT REQUEST!" if User.duplicate?(email: email, password: password)
     result = connection.exec("INSERT INTO users (email, password) VALUES ('#{email}','#{password}') RETURNING id, email, password;")
@@ -28,11 +25,7 @@ class User
   end
   
   def self.login(email:, password:)
-    if ENV['RACK_ENV'] == 'test'
-      connection = PG.connect(dbname: 'makersbnb_test')
-    else
-      connection = PG.connect(dbname: 'makersbnb')
-    end
+    connection = establish_connection()
     result = connection.exec("SELECT * FROM users WHERE email = '#{email}' LIMIT 1;")
     account = result.map { |account| account }
     raise "NO ACCOUNT FOUND!" if account[0] == nil
@@ -40,11 +33,7 @@ class User
   end 
 
   def self.duplicate?(email:, password:)
-    if ENV['RACK_ENV'] == 'test'
-      connection = PG.connect(dbname: 'makersbnb_test')
-    else
-      connection = PG.connect(dbname: 'makersbnb')
-    end
+    connection = establish_connection()
     result = connection.exec("SELECT * FROM users WHERE email = '#{email}' LIMIT 1;")
     account = result.map { |account| account }
     account[0] != nil

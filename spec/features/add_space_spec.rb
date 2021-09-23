@@ -11,5 +11,5 @@ feature 'add space' do
     expect(current_path).to eq '/listings'
     expect(page).to have_content 'A nice loft'
   end 
-end 
+end  
 

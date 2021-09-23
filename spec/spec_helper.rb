@@ -1,4 +1,4 @@
-
+require 'web_helpers'
 require 'simplecov'
 require 'simplecov-console'
 require_relative 'set_up_test_database'
