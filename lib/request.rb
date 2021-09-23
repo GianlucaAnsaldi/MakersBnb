@@ -1,5 +1,5 @@
 require 'pg'
-require 'dbconnect'
+require_relative 'dbconnect'
 
 class Request
 

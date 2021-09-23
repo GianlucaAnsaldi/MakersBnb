@@ -5,11 +5,12 @@ require './lib/user'
 require './lib/request'
 
 class MakersBnB < Sinatra::Base
+
+  enable :sessions
+
   configure :development do
     register Sinatra::Reloader
   end
-  
-  enable :sessions
   
   get '/' do
     erb :index
@@ -30,8 +31,8 @@ class MakersBnB < Sinatra::Base
   end
 
   post '/users/new' do
-    @user = User.create(email: params['email'], password: params['password'])
-    $user_id = @user.id
+    user = User.create(email: params['email'], password: params['password'])
+    $user_id = user.id
     redirect '/listings'
   end
 
