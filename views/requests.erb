@@ -2,11 +2,15 @@
 
 <br><br><br><br>
 
-<% @spaces.each do |space| %> 
+<% @spaces.each do |space| %>
   <div style="width:100%">
     <div style="display: inline-block"><%= space.name %></div>
-    <div style="display: inline-block"><button type="submit" class="msgBtn2" onClick="return false;">Approve</button></div>
-    <div style="display: inline-block"><button class="msgBtnBack">Reject</button></div>
+    <form action="/requests/<%= space.id %>/approve" method="POST">>
+      <div style="display: inline-block"><button type="submit" value='approve'>Approve</button></div>
+    </form>
+    <form action='/request/reject' method='post'>
+      <div style="display: inline-block"><button type="submit" value='reject'>Reject</button></div>
+    </form>
   </div>
 <% end %>
 

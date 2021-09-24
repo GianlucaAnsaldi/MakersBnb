@@ -36,4 +36,9 @@ attr_reader :id, :user_id, :space_id, :is_approved
       )
     end
   end
+
+  def self.close_request(space_id:)
+    connection = establish_connection()
+    connection.exec("DELETE FROM requests WHERE space_id=#{space_id};")
+  end
 end
