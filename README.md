@@ -1,6 +1,16 @@
-## The Project
+# Makers BnB
 
+## Summary
 
+This project was our first group project at Makers, the main goal for this week was to experience working in a team to create a mock version of Airbnb.
+
+## Developers
+
+- Daniel Clements (Legal-Dan)
+- Jake Burton Stewart (Jjake540)
+- Florence Bain (florence-bain)
+- Tom Lee (tomal02)
+- Gianluca Ansaldi (GianlucaAnsaldi)
 
 ## MVP
 ```
