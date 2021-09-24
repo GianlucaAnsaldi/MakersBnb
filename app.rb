@@ -4,14 +4,13 @@ require './lib/spaces'
 require './lib/user'
 require './lib/request'
 
-
 class MakersBnB < Sinatra::Base
-  
+
+  enable :sessions
+
   configure :development do
     register Sinatra::Reloader
   end
-  
-  enable :sessions
   
   get '/' do
     erb :index
@@ -22,7 +21,8 @@ class MakersBnB < Sinatra::Base
   end
 
   post '/listings/space_added' do
-    Spaces.add(name: params['name'], description: params['description'], price: params['price'])
+    user_id = session[:user_id]
+    Spaces.add(name: params['name'], description: params['description'], price: params['price'], owner_id: user_id)
     redirect '/listings'
   end
   
@@ -32,8 +32,8 @@ class MakersBnB < Sinatra::Base
   end
 
   post '/users/new' do
-    @user = User.create(email: params['email'], password: params['password'])
-    $user_id = @user.id
+    user = User.create(email: params['email'], password: params['password'])
+    session[:user_id] = user.id
     redirect '/listings'
   end
 
@@ -42,11 +42,15 @@ class MakersBnB < Sinatra::Base
   end
 
   post '/users/verify' do
-    User.login(email: params['email'], password: params['password'])
+    user = User.login(email: params['email'], password: params['password'])
+    session[:user_id] = user.id
     redirect '/listings'
   end
 
   get '/requests' do
+    user_id = session[:user_id]
+    @requests = Request.show_pending(user: user_id)
+    @spaces = @requests.map { |request| Spaces.find(id: request.space_id) }
     erb :requests
   end
 
@@ -56,7 +60,7 @@ class MakersBnB < Sinatra::Base
   end
 
   post '/listings/:id/request_booking' do
-    Request.generate(user_id: $user_id, space_id: params['id'])
+    Request.generate(user_id: session[:user_id], space_id: params['id'])
     redirect '/listings'
   end
 

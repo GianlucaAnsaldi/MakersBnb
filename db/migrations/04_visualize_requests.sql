@@ -1,0 +1,1 @@
+SELECT requests.id, spaces.id, spaces.owner_id FROM requests INNER JOIN spaces on requests.space_id=spaces.id WHERE owner_id = 1

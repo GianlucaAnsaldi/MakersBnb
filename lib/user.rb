@@ -30,6 +30,11 @@ class User
     account = result.map { |account| account }
     raise "NO ACCOUNT FOUND!" if account[0] == nil
     raise "PASSWORD INCORRECT!" if account[0]["password"] != password
+    User.new(
+      id: result[0]['id'],
+      email: result[0]['email'],
+      password: result[0]['password']
+    )
   end 
 
   def self.duplicate?(email:, password:)

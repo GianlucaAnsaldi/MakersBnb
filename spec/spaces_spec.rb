@@ -1,13 +1,14 @@
 require 'spaces'
+require 'user'
 
 describe Spaces do
   describe '.all' do 
     it 'Can return all spaces' do
       connection = PG.connect(dbname: 'makersbnb_test')
-      
-      connection.exec("INSERT INTO spaces (name, description, price) VALUES ('loft', 'lovely loft', '1000');")
-      connection.exec("INSERT INTO spaces (name, description, price) VALUES ('house', 'lovely house', '2000');")
-      connection.exec("INSERT INTO spaces (name, description, price) VALUES ('shed', 'lovely shed', '50');")
+      User.create(email: 'test@example.com', password: 'secret123')
+      connection.exec("INSERT INTO spaces (name, description, price, owner_id) VALUES ('loft', 'lovely loft', '1000', 1);")
+      connection.exec("INSERT INTO spaces (name, description, price, owner_id) VALUES ('house', 'lovely house', '2000', 1);")
+      connection.exec("INSERT INTO spaces (name, description, price, owner_id) VALUES ('shed', 'lovely shed', '50', 1);")
 
       spaces = Spaces.all
       expect(spaces.length).to eq 3
@@ -20,12 +21,14 @@ describe Spaces do
 
   describe '.add' do 
     it 'adds a listing' do 
-      space = Spaces.add(name: 'Loft', description: 'A nice loft', price: 90)
+      user = User.create(email: 'test@example.com', password: 'secret123')
+      space = Spaces.add(name: 'Loft', description: 'A nice loft', price: 90, owner_id: 1)
       expect(space).to be_a Spaces
     end 
 
     it 'adds the parameters correctly to the database' do 
-      space = Spaces.add(name: 'Loft', description: 'A nice loft', price: 90)
+      user = User.create(email: 'test@example.com', password: 'secret123')
+      space = Spaces.add(name: 'Loft', description: 'A nice loft', price: 90, owner_id: 1)
       expect(space.name).to eq('Loft')
       expect(space.description).to eq('A nice loft')
       expect(space.price).to eq('90')
@@ -34,7 +37,8 @@ describe Spaces do
 
   describe '.find' do
     it 'returns the requested spaces object' do
-      space = Spaces.add(name: 'Loft', description: 'A nice loft', price: 90)
+      user = User.create(email: 'test@example.com', password: 'secret123')
+      space = Spaces.add(name: 'Loft', description: 'A nice loft', price: 90, owner_id: 1)
       results = Spaces.find(id: space.id)
 
       expect(results.id).to eq space.id
