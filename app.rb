@@ -50,6 +50,7 @@ class MakersBnB < Sinatra::Base
   get '/requests' do
     user_id = session[:user_id]
     @requests = Request.show_pending(user: user_id)
+    session[:request_id] = 
     @spaces = @requests.map { |request| Spaces.find(id: request.space_id) }
     erb :requests
   end
@@ -61,6 +62,18 @@ class MakersBnB < Sinatra::Base
 
   post '/listings/:id/request_booking' do
     Request.generate(user_id: session[:user_id], space_id: params['id'])
+    redirect '/listings'
+  end
+
+  post '/requests/:id/approve' do
+    Request.close_request(space_id: params['id'])
+    Spaces.remove_space(space_id: params['id'])
+    redirect '/requests'
+
+  end
+
+  post '/request/reject' do
+
     redirect '/listings'
   end
 

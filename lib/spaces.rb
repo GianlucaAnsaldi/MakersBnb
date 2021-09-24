@@ -48,5 +48,10 @@ class Spaces
     )
   end
 
+  def self.remove_space(space_id:)
+    connection = establish_connection()
+    connection.exec("DELETE FROM spaces WHERE id=#{space_id};")
+  end
+
 end
     
