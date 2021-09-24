@@ -1,0 +1,29 @@
+body {
+  background-color: lightblue;
+  border: 2px solid white;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  margin-left: 200px;
+}
+
+p {
+  margin-left: 200px;
+  font-family: verdana;
+  font-size: 13px;
+}
+
+p2 {
+  margin-left: 200px;
+  font-family: verdana;
+  font-size: 18px;
+}
+
+div {
+  text-align: center
+}

@@ -26,7 +26,7 @@ class User
   
   def self.login(email:, password:)
     connection = establish_connection()
-    result = connection.exec("SELECT * FROM users WHERE email = '#{email}';")
+    result = connection.exec("SELECT * FROM users WHERE email = '#{email}' LIMIT 1;")
     account = result.map { |account| account }
     raise "NO ACCOUNT FOUND!" if account[0] == nil
     raise "PASSWORD INCORRECT!" if account[0]["password"] != password
