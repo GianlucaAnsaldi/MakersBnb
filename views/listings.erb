@@ -1,10 +1,10 @@
 <h1> Makers BnB </h1> <h2><a href='/requests'>  My requests </a></h2>
-
+<div2>
   <% @spaces.each do |space| %>
     <p2> <a href='/listings/<%= space.id %>'> <%= space.name %> </a> : <%= space.description %> </p2>
     <p> £<%= space.price %> per night </p><br>
   <% end %>
-
+</div2>
 <div>
 <form action='/listings/new' >
   <input type='submit' value='Add Listing' >
