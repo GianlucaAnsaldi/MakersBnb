@@ -62,27 +62,33 @@ Any signed-up user can request to hire any space for one night, and this should 
 
 
 Table: spaces
-
+```
 |------|--------|---------------|-----------|---------------|------------|
 |  id  |  name  |  description  |   price   |  booked_by    |  owner_id  |
 |------|--------|---------------|-----------|---------------|------------|
 |  1   |  Loft  | "a nice loft" |     90    | FK request_id | FK user_id |
 |------|--------|---------------|-----------|---------------|------------|
-
+```
 Table: users
-
+```
 |------|--------|------------------|-----------|
 |  id  |  name  |  email           | password  |
 |------|--------|------------------|-----------|
 |  1   |  Tom   | test@example.com | secret    |
 |------|--------|------------------|-----------|
-
+```
 
 Table: requests
 
-
+```
 |------|---------------------------|-------------|-----------|
 |  id  |  requesting_user          |  space_id   | approved? |
 |------|---------------------------|-------------|-----------|
 |  1   |  FK user_id               | FK space_id | boolean   |
 |------|---------------------------|-------------|-----------|
+```
+
+
+
+![Screenshot 2021-09-24 at 14 26 10](https://user-images.githubusercontent.com/87538271/134682064-e7700bfb-b0cf-44cd-baeb-42af064df43c.png)
+
